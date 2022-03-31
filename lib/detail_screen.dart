@@ -63,22 +63,23 @@ class DetailScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Image.network(
-                        'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
-                  ),
+                      padding: const EdgeInsets.all(4.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(30.0),
+                        child: Image.asset('assets/images/monkasel1.jpg'),
+                      )),
                   Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Image.asset('assets/images/monkasel1.jpg'),
-                  ),
+                      padding: const EdgeInsets.all(4.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(30.0),
+                        child: Image.asset('assets/images/monkasel2.jpg'),
+                      )),
                   Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Image.asset('assets/images/monkasel2.jpg'),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Image.asset('assets/images/monkasel3.jpg'),
-                  ),
+                      padding: const EdgeInsets.all(4.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(30.0),
+                        child: Image.asset('assets/images/monkasel3.jpg'),
+                      )),
                 ],
               ),
             )
