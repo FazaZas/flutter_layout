@@ -10,17 +10,25 @@ class TourismPlace {
   });
 }
 
-var tourisnPlaceList = [
+var tourismPlaceList = [
   TourismPlace(
       name: 'Surabaya Submarine Monument',
       location: 'Jl Pemuda',
       imageAsset: 'assets/images/submarine.jpg'),
   TourismPlace(
-      name: 'Surabaya',
-      location: 'Jl Pemuda',
-      imageAsset: 'assets/images/submarine.jpg'),
+      name: 'Klenteng Sanggar Agung',
+      location: 'Kenjeran',
+      imageAsset: 'assets/images/klenteng.jpg'),
   TourismPlace(
-      name: 'Surabaya Submarine Monument',
-      location: 'Jl Pemuda',
-      imageAsset: 'assets/images/submarine.jpg'),
+      name: 'House of Sampoerna',
+      location: 'Krembang Utara',
+      imageAsset: 'assets/images/sampoerna.jpg'),
+  TourismPlace(
+      name: 'Tugu Pahlawan',
+      location: 'Alun-alun Contong',
+      imageAsset: 'assets/images/pahlawan.jpg'),
+  TourismPlace(
+      name: 'Patung Suro Boyo',
+      location: 'Wonokromo',
+      imageAsset: 'assets/images/sby.jpg'),
 ];

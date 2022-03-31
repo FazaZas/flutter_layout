@@ -1,7 +1,6 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_layout/detail_screen.dart';
+import 'package:flutter_layout/model/tourism_place.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -12,13 +11,19 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Wisata Bandung'),
       ),
-      body: InkWell(
-        onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return DetailScreen();
-          }));
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          final TourismPlace place = tourismPlaceList[index];
+          return InkWell(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return DetailScreen(place: place);
+              }));
+            },
+            child: listItem(place),
+          );
         },
-        child: listItem(),
+        itemCount: tourismPlaceList.length,
       ),
     );
   }
@@ -30,13 +35,26 @@ class MainScreen extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 1,
-            child: Image.asset('assets/images/submarine.jpg'),
+            child: Image.asset(place.imageAsset),
           ),
           Expanded(
             flex: 2,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text(
+                    place.name,
+                    style: const TextStyle(fontSize: 16.0),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(place.location),
+                ],
+              ),
             ),
           )
         ],

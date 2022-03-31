@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key}) : super(key: key);
@@ -9,11 +10,11 @@ class DetailScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            Image.asset('assets/images/submarine.jpg'),
+            Image.asset(place.imageAsset),
             Container(
                 margin: EdgeInsets.only(top: 16.0),
                 child: Text(
-                  "Surabaya Submarine Monument",
+                  place.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30.0,
