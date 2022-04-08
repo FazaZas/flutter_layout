@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_layout/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
+
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +51,8 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(16.0),
-              child: const Text(
-                'museum inside a decommisoned Russian war submarine with tour & an adjacent park with cafes. Clean and well maintaned. Car park cost 10k, entrance fee 15k/person. You can see KRI Pasopati there, it is russian whiskey class. You can also watch the vidio about the indonesian Navy at the building beside the submarine.',
+              child: Text(
+                place.description,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16.0,
@@ -67,19 +69,19 @@ class DetailScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(4.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset('assets/images/monkasel1.jpg'),
+                        child: Image.asset(place.gambar1),
                       )),
                   Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset('assets/images/monkasel2.jpg'),
+                        child: Image.asset(place.gambar2),
                       )),
                   Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset('assets/images/monkasel3.jpg'),
+                        child: Image.asset(place.gambar3),
                       )),
                 ],
               ),

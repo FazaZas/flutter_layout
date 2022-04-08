@@ -56,13 +56,37 @@ flutter:
 
   assets:
     - assets/images/submarine.jpg
-    - assets/images/monkasel1.jpg
-    - assets/images/monkasel2.jpg
-    - assets/images/monkasel3.jpg
+    - assets/images/submarine1.jpg
+    - assets/images/submarine2.jpg
+    - assets/images/submarine3.jpg
     - assets/images/klenteng.jpg
+    - assets/images/klenteng1.jpg
+    - assets/images/klenteng2.jpg
+    - assets/images/klenteng3.jpg
     - assets/images/sampoerna.jpg
-    - assets/images/pahlawan.jpg
+    - assets/images/sampoerna1.jpg
+    - assets/images/sampoerna2.jpg
+    - assets/images/sampoerna3.jpg
+    - assets/images/tugu.jpg
+    - assets/images/tugu1.jpg
+    - assets/images/tugu2.jpg
+    - assets/images/tugu3.jpg
     - assets/images/sby.jpg
+    - assets/images/sby1.jpg
+    - assets/images/sby2.jpg
+    - assets/images/sby3.jpg
+    - assets/images/bajo.jpg
+    - assets/images/bajo1.jpg
+    - assets/images/bajo2.jpg
+    - assets/images/bajo3.jpg
+    - assets/images/bromo.jpg
+    - assets/images/bromo1.jpg
+    - assets/images/bromo2.jpg
+    - assets/images/bromo3.jpg
+    - assets/images/tanah-lot.jpg
+    - assets/images/tanah-lot1.jpg
+    - assets/images/tanah-lot2.jpg
+    - assets/images/tanah-lot3.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

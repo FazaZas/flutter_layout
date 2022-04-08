@@ -9,7 +9,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Wisata Bandung'),
+        title: const Text('Wisata Indonesia'),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
@@ -28,7 +28,7 @@ class MainScreen extends StatelessWidget {
     );
   }
 
-  Widget listItem() {
+  Widget listItem(TourismPlace place) {
     return Card(
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
